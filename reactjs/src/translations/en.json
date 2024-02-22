@@ -1,0 +1,69 @@
+{   
+    "homeheader":{
+        "speciality":"Medical specialty",
+        "searchdoctor":"Find a doctor by specialty",
+        "health-facility":"Health facilities",
+        "select-room":"Choose hospital clinic",
+        "doctor":"Doctor",
+        "search-doctor":"Choose a good doctor",
+        "fee":"Checkup package",
+        "check-health":"General health check",
+        "support":"Support",
+        "welcome":"Welcome,"
+    },
+    "banner":{
+        "title1":"MEDICAL BACKGROUND",
+        "title2":"COMPREHENSIVE HEALTH CARE",
+        "child1":"Specialized examination",
+        "child2":"Remote examination",
+        "child3":"General examination",
+        "child4":"Medical test",
+        "child5":"Mental health",
+        "child6":"Dental examination"
+        
+    },
+    "menu": {
+        "system": {
+            "header": "System",
+            "system-administrator": {
+                "header": "System Administrator",
+                "user-manage": "User manage",
+                "user-redux": "Manage user using redux manage",
+                "register-package-group-or-account": "Register service package for group/account"
+            },
+            "system-parameter": {
+                "header": "System-parameter"
+            }
+        },
+        "admin": {
+            "manage-user": "Users",
+            "manage-doctor": "Manage doctors",
+            "manage-admin": "Manage admins",
+            "crud": "CRUD user",
+            "crud-redux": "CRUD redux",
+            "manage-clinic": "Manage clinics",
+            "clinic": "Clinics",
+            "manage-specialty": "Manage specialties",
+            "specialty": "Specialties",
+            "manage-handbook": "Manage handbooks",
+            "handbook": "Handbooks"
+        }
+        
+    },
+    "manage-user":{
+        "add":"Add a new user ",
+        "email":"Email",
+        "password":"Password",
+        "first-name":"First name",
+        "last-name":"Last name",
+        "phone-number":"Phone number",
+        "address":"Address",
+        "gender":"Gender",
+        "position":"Position",
+        "role":"Role",
+        "image":"Avatar",
+        "save":"Save"
+
+    }
+  
+}
