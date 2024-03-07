@@ -11,9 +11,10 @@ import Login from './Auth/Login';
 import Header from './Header/Header';
 import System from '../routes/System';
 import { CustomToastCloseButton } from '../components/CustomToast';
-import HomePage from './HomePage/HomePage.js';  
-
+import HomePage from './HomePage/HomePage.js';
+import DetailDoctor from './Paitien/Doctor/DetailDoctor.js';
 import CustomScrollbars from '../components/CustomScrollbars';
+import Doctor from '../routes/Doctor.js';
 class App extends Component {
 
     handlePersistorState = () => {
@@ -41,13 +42,16 @@ class App extends Component {
                     <div className="main-container">
 
                         <div className="content-container">
-                            <CustomScrollbars style ={{height:'100vh', width:'100%'}}>
-                            <Switch>
-                                <Route path={path.HOME} exact component={(Home)} />
-                                <Route path={path.LOGIN} component={userIsNotAuthenticated(Login)} />
-                                <Route path={path.SYSTEM} component={userIsAuthenticated(System)} />
-                                <Route path={path.HOMEPAGE} component={HomePage} />
-                            </Switch>
+                            <CustomScrollbars style={{ height: '100vh', width: '100%' }}>
+                                <Switch>
+                                    <Route path={path.HOME} exact component={(Home)} />
+                                    <Route path={path.LOGIN} component={userIsNotAuthenticated(Login)} />
+                                    <Route path={path.SYSTEM} component={userIsAuthenticated(System)} />
+                                    <Route path={path.HOMEPAGE} component={HomePage} />
+                                    <Route path={path.DETAIL_DOCTOR} component={DetailDoctor} />
+                                    <Route path={'/doctor/'} component={userIsAuthenticated(Doctor)} />
+
+                                </Switch>
                             </CustomScrollbars>
                         </div>
 
@@ -59,16 +63,16 @@ class App extends Component {
                         /> */}
 
                         <ToastContainer
-                        position="bottom-right"
-                        autoClose={5000}
-                        hideProgressBar={false}
-                        newestOnTop={false}
-                        closeOnClick
-                        rtl={false}
-                        pauseOnFocusLoss
-                        draggable
-                        pauseOnHover
-                        theme="light"
+                            position="bottom-right"
+                            autoClose={5000}
+                            hideProgressBar={false}
+                            newestOnTop={false}
+                            closeOnClick
+                            rtl={false}
+                            pauseOnFocusLoss
+                            draggable
+                            pauseOnHover
+                            theme="light"
                         // transition: Bounce
                         />
 
