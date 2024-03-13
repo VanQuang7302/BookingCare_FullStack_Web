@@ -23,7 +23,12 @@ class DoctorExtrainfor extends Component {
     }
 
     async componentDidMount() {
-
+        let res = await getExtraInforDoctorById(this.props.doctorIdFromParent);
+        if (res && res.errCode === 0) {
+            this.setState({
+                extraInfor: res.data
+            })
+        }
     }
 
     async componentDidUpdate(prevProps, prevState, snapshot) {
@@ -33,7 +38,6 @@ class DoctorExtrainfor extends Component {
 
         if (this.props.doctorIdFromParent !== prevProps.doctorIdFromParent) {
             let res = await getExtraInforDoctorById(this.props.doctorIdFromParent);
-            console.log('check res:', res)
             if (res && res.errCode === 0) {
                 this.setState({
                     extraInfor: res.data

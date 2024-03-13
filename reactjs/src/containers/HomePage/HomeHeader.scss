@@ -1,5 +1,5 @@
-.home-header-container{
-    height: 65px;  
+.home-header-container {
+    height: 65px;
     width: 100%;
     padding: 0 40px;
     position: sticky;
@@ -7,87 +7,96 @@
     background-color: white;
     z-index: 999;
 
-    .home-header-content{
+    .home-header-content {
         width: 100%;
         height: 100%;
         display: flex;
 
-        .left-content{
+        .left-content {
             width: 20%;
             display: flex;
             align-items: center;
-            
 
-            .header-logo{
+
+            .header-logo {
                 height: 100%;
                 width: 100%;
                 cursor: pointer;
-                transform: scale(0.5,0.5);
+                transform: scale(0.5, 0.5);
                 margin-left: -45px;
             }
 
-            i{
+            i {
                 font-size: 25px;
                 color: grey;
                 cursor: pointer;
             }
         }
-        .center-content{
+
+        .center-content {
             width: 55%;
             display: flex;
             justify-content: space-between;
             align-items: center;
 
-            .child-content{
-                .subs-title{
+            .child-content {
+                .subs-title {
                     font-weight: 400;
                     font-size: 12px;
                 }
             }
         }
-        .right-content{
+
+        .right-content {
             width: 25%;
-            display: flex;           
+            display: flex;
             align-items: center;
             justify-content: center;
 
-            .support{
+            .support {
                 padding-right: 50px;
                 display: flex;
                 align-items: center;
                 cursor: pointer;
 
-                i{
+                i {
                     font-size: 15px;
                     margin-right: 5px;
                     color: #49bce2;
                 }
             }
 
-            .language-vi{
+            .language-vi {
                 cursor: pointer;
                 opacity: 0.2;
-                &.active{
+
+                &.active {
                     opacity: 1;
-                   span{
-                    color: orange;
-                   }
+
+                    span {
+                        color: orange;
+                    }
                 }
-                &:hover{
+
+                &:hover {
                     opacity: 1;
                 }
             }
-            .language-en{
+
+            .language-en {
                 cursor: pointer;
                 margin: 0 10px;
                 opacity: 0.2;
-                &.active{
+
+                &.active {
                     opacity: 1;
-                    span{
+
+                    span {
                         color: blue;
-                       }
+                    }
                 }
-                &:hover{
+
+                &:hover {
                     opacity: 1;
                 }
             }
@@ -95,20 +104,21 @@
     }
 }
 
-.home-header-banner{
+.home-header-banner {
     background: url('../../assets/headerBG.jpg');
-    height: 520px;
+    height: 645px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
 
-    .content-up{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgba(255, 255, 255, 0.1));
+    .content-up {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0.1));
         padding-top: 15px;
         height: 65%;
-        .title1{
+
+        .title1 {
             text-align: center;
             font-size: 30px;
             text-shadow: 1px 1px 1px #333;
@@ -116,14 +126,16 @@
             margin-top: 30px;
             margin-bottom: 5px;
         }
-        .title2{
+
+        .title2 {
             text-align: center;
             font-size: 30px;
             text-shadow: 1px 1px 1px #333;
             color: white;
             margin-bottom: 16px;
         }
-        .search{
+
+        .search {
             width: fit-content;
             display: flex;
             justify-content: center;
@@ -132,11 +144,12 @@
             padding: 10px;
             border-radius: 25px;
             background: #f7d800;
-    
-            i{
+
+            i {
                 margin: 0 5px;
             }
-            input{
+
+            input {
                 width: 360px;
                 height: 35px;
                 background: transparent;
@@ -145,26 +158,27 @@
             }
         }
     }
-    .content-right{
+
+    .content-right {
         height: 35%;
         padding-bottom: 15px;
         display: flex;
         align-items: flex-end;
         justify-content: center;
-        background-image: linear-gradient(rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 1));
+        background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 1));
 
-        .options{
+        .options {
             display: flex;
             text-align: center;
             gap: 45px;
             justify-content: center;
 
-            .option-child{
+            .option-child {
                 width: 100px;
                 text-align: center;
-               
 
-                .icon-child{
+
+                .icon-child {
                     background: white;
                     width: 40px;
                     height: 40px;
@@ -173,16 +187,18 @@
                     text-align: center;
                     margin: 0 auto;
 
-                    i{
+                    i {
                         color: #49bce2;
                         font-size: 20px;
                     }
                 }
-                .text-child{
+
+                .text-child {
                     font-size: 17px;
                     font-weight: 500;
                     cursor: pointer;
-                    &:hover{
+
+                    &:hover {
                         color: #49bce2;
                     }
                 }
@@ -191,6 +207,6 @@
 
         }
     }
-    
-    
+
+
 }

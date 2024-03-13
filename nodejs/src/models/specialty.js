@@ -10,13 +10,14 @@ module.exports = (sequelize, DataTypes) => {
          * The `models/index` file will call this method automatically.
          */
         static associate(models) {
-            // define association here
+            Specialty.hasMany(models.Doctor_Infor, { foreignKey: 'specialtyId' })
         }
     };
     Specialty.init({
         name: DataTypes.STRING,
-        description: DataTypes.TEXT,
-        image: DataTypes.STRING,
+        descriptionMarkdown: DataTypes.TEXT('long'),
+        descriptionHTML: DataTypes.TEXT('long'),
+        image: DataTypes.STRING
 
     }, {
         sequelize,
