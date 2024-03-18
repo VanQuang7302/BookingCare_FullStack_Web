@@ -1,32 +1,56 @@
 //rest css
 .slick-prev {
+    box-shadow: rgb(109, 226, 239) 2px 2px 5px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: rgb(181, 231, 237);
+    background-color: rgb(255, 255, 255);
+    left: 98%;
+    transition-duration: 0s;
     // position: relative !important;
     left: -10px !important;
     z-index: 1000 !important;
-    height: 48px !important;
-    width: 44px !important;
-    background: #fff !important;
-    border: 2px solid #d7d7d7 !important;
 
     &:hover {
         background: #ededec !important;
     }
 }
 
-.slick-prev:before,
+.slick-prev:before {
+
+    font-family: Montserrat, sans-serif !important;
+    font-size: 20px;
+    line-height: 1.5 !important;
+    outline: none !important;
+    color: rgb(176, 171, 162) !important;
+    content: "<" !important;
+}
+
 .slick-next:before {
-    font-family: "Font Awesome 5 Free" !important;
-    color: orange !important;
-    // content: "\f060" !important;
+    font-family: Montserrat, sans-serif !important;
+    font-size: 20px;
+    line-height: 1.5 !important;
+    outline: none !important;
+    color: rgb(176, 171, 162) !important;
+    content: ">" !important;
 }
 
 .slick-next {
-    right: 10px !important;
-    z-index: 1000 !important;
-    height: 48px !important;
-    width: 44px !important;
-    background: #fff !important;
-    border: 2px solid #d7d7d7 !important;
+    box-shadow: rgb(109, 226, 239) 2px 2px 5px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: rgb(181, 231, 237);
+    background-color: rgb(255, 255, 255);
+    left: 98%;
+    transition-duration: 0s;
 
     &:hover {
         background: #ededec !important;
@@ -53,8 +77,8 @@
 
         .section-customize {
             .bg-image {
-                width: 325px;
-                height: 180px;
+                width: 330px;
+                height: 235px;
                 background-position: center center;
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -70,8 +94,8 @@
 
                 &.section-outstanding-doctor {
                     // background-image: url("../../assets/Outstanding-doctor/AD-hanoi.jpg");
-                    width: 120px;
-                    height: 120px;
+                    width: 200px;
+                    height: 195px;
                     border-radius: 50%;
                 }
 
@@ -85,11 +109,11 @@
 }
 
 .section-share {
-    height: 330px;
+    height: 370px;
 
 
     .section-container {
-        margin: 0 60px;
+        margin: 20px 90px;
         display: flex;
         flex-direction: column;
 
@@ -136,8 +160,8 @@
         cursor: pointer;
 
         .customize-border {
-            border: 1px solid orange;
-            padding: 20px;
+            border: 1px solid rgb(184, 182, 180);
+            padding: 18px;
         }
     }
 }
@@ -152,7 +176,7 @@
 }
 
 .section-about {
-    padding: 0 70px;
+    padding: 30px 70px;
 
     .section-about-header {
         padding: 20px 10px;

@@ -33,20 +33,22 @@ class MedicalFacility extends Component {
                         <button className="btn-section"><FormattedMessage id="homepage.more-info" /></button>
                     </div>
                     <div className='section-body'>
-                        {dataClinic && dataClinic.length > 0 &&
-                            dataClinic.map((item, index) => {
-                                return (
-                                    <div className="section-customize clinic-child" key={index}
-                                        onClick={() => this.handleViewDetailSpeciaty(item.id)}
-                                    >
-                                        <div className="bg-image section-specialty"
-                                            style={{ backgroundImage: `url(${item.image})` }}
-                                        />
-                                        <div className="clinic-name">{item.name}</div>
-                                    </div>
-                                )
-                            })
-                        }
+                        <Slider {...this.props.settings}>
+                            {dataClinic && dataClinic.length > 0 &&
+                                dataClinic.map((item, index) => {
+                                    return (
+                                        <div className="section-customize clinic-child" key={index}
+                                            onClick={() => this.handleViewDetailSpeciaty(item.id)}
+                                        >
+                                            <div className="bg-image section-specialty"
+                                                style={{ backgroundImage: `url(${item.image})` }}
+                                            />
+                                            <div className="clinic-name">{item.name}</div>
+                                        </div>
+                                    )
+                                })
+                            }
+                        </Slider>
                     </div>
 
                 </div>

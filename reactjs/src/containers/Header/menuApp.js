@@ -43,14 +43,14 @@ export const adminMenu = [
             },
         ]
     },
-    { //quản lý cẩm nang  
-        name: 'menu.admin.handbook',
-        menus: [
-            {
-                name: 'menu.admin.manage-handbook', link: '/system/manage-handbook'
-            },
-        ]
-    },
+    // { //quản lý cẩm nang  
+    //     name: 'menu.admin.handbook',
+    //     menus: [
+    //         {
+    //             name: 'menu.admin.manage-handbook', link: '/system/manage-handbook'
+    //         },
+    //     ]
+    // },
 
 ];
 
@@ -61,6 +61,10 @@ export const doctorMenu = [
             { //quản lý kế hoạch khám bệnh của bác sĩ
 
                 name: 'menu.doctor.manage-schedule', link: '/doctor/manage-schedule'
+            },
+            { //quản lý benh nhan
+
+                name: 'menu.doctor.manage-patient', link: '/doctor/manage-patient'
             },
         ]
     }

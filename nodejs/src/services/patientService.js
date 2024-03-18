@@ -39,9 +39,9 @@ let postBookAppointment = (data) => {
                     defaults: {
                         email: data.email,
                         roleId: 'R3',
-                        // gender: data.gender,
-                        // address: data.address,
-                        // firstName: data.fullName
+                        gender: data.selectedGender,
+                        address: data.address,
+                        firstName: data.fullName
                     },
                 });
 
@@ -52,7 +52,7 @@ let postBookAppointment = (data) => {
                         defaults: {
                             statusId: 'S1',
                             doctorId: data.doctorId,
-                            patientID: user[0].id,
+                            patientId: user[0].id,
                             date: data.date,
                             timeType: data.timeType,
                             token: token
