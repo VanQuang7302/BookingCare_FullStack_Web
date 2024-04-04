@@ -7,7 +7,7 @@ import './ManageSpecialty.scss';
 import MarkdownIt from 'markdown-it';
 import MdEditor from 'react-markdown-editor-lite';
 import { toast } from 'react-toastify';
-import { createSpecialtyService } from '../../../services/userService';
+import { createSpecialtyService, editSpecialty } from '../../../services/userService';
 const mdParser = new MarkdownIt(/* Markdown-it options */);
 
 class ManageSpecialty extends Component {
@@ -19,6 +19,9 @@ class ManageSpecialty extends Component {
             imageBase64: '',
             descriptionHTML: '',
             descriptionMarkdown: '',
+            selectedOption: "",
+            listOptions: [],
+            isOpenModal: false,
         }
     }
 

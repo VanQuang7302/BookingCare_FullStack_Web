@@ -136,5 +136,21 @@
         "address": "Address",
         "gender": "Gender",
         "confirm": "Confirm"
+    },
+    "homefooter": {
+        "companyName": "BookingCare Technology Joint Stock Company",
+        "Contact-for-cooperation": "Contact for cooperation",
+        "Enterprise-digital-transformation-package": "Enterprise digital transformation package",
+        "Recruit": "Recruit",
+        "Frequently-asked-questions": "Frequently asked questions",
+        "terms-of-use": "Terms of use",
+        "Privacy-Policy": "Privacy Policy",
+        "Complaint-handling-support-process": "Complaint handling support process",
+        "Operational-Regulations": "Operational Regulations",
+        "Headquarters": "Headquarters in Hanoi",
+        "Office": "Office in Ho Chi Minh City",
+        "support": "Customer support",
+        "download": "Get the BookingCare app for your phone or tablet:",
+        "other": "Other"
     }
 }

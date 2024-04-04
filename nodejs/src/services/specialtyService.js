@@ -107,8 +107,49 @@ let getSpecialtyById = (inputId, location) => {
     })
 }
 
+let editSpecialty = (id, data) => {
+    console.log(id, data)
+    return new Promise(async (resolve, reject) => {
+        try {
+            if (
+                !data.name ||
+                !data.image ||
+                !data.descriptionHTML ||
+                !data.descriptionMarkdown
+            ) {
+                resolve({
+                    errCode: 1,
+                    errMessage: "Missing parameter",
+                })
+            } else {
+                let specialty = await db.Specialty.findOne({
+                    where: {
+                        id: id,
+                    },
+                    raw: false,
+                })
+                console.log("Tim ra specialty: ", specialty)
+                specialty.image = data.image
+                specialty.name = data.name
+                specialty.descriptionHTML = data.descriptionHTML
+                specialty.descriptionMarkdown = data.descriptionMarkdown
+
+                await specialty.save()
+
+                resolve({
+                    errCode: 0,
+                    errMessage: "OK",
+                })
+            }
+        } catch (error) {
+            reject(error)
+        }
+    })
+}
+
 module.exports = {
     createSpecialty: createSpecialty,
     getAllSpecialty: getAllSpecialty,
     getSpecialtyById: getSpecialtyById,
+    editSpecialty: editSpecialty
 }

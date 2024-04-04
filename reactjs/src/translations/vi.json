@@ -68,11 +68,11 @@
         "edit": "Lưu thay đổi"
     },
     "homepage": {
-        "out-standing-doctor": "Bác sĩ nổi bật tuần qua",
+        "out-standing-doctor": "Bác sĩ ",
         "more-info": "Xem thêm",
         "handbook": "Cẩm nang",
-        "medical-facility": "Cơ sở y tế nổi bật",
-        "specialty": "Chuyên khoa phổ biến"
+        "medical-facility": "Cơ sở y tế",
+        "specialty": "Chuyên khoa"
     },
     "manage-schedule": {
         "title": "Quản  lí kế hoạch khám bệnh của bác sĩ",
@@ -136,5 +136,21 @@
         "address": "Địa chỉ",
         "gender": "Giới tính",
         "confirm": "Xác nhận"
+    },
+    "homefooter": {
+        "companyName": "Công ty Cổ phần Công nghệ BookingCare",
+        "Contact-for-cooperation": "Liên hệ hợp tác",
+        "Enterprise-digital-transformation-package": "Gói chuyển đổi số doanh nghiệp",
+        "Recruit": "Tuyển dụng",
+        "Frequently-asked-questions": "Câu hỏi thường gặp",
+        "terms-of-use": "Điều khoản sử dụng",
+        "Privacy-Policy": "Chính sách Bảo mật",
+        "Complaint-handling-support-process": "Quy trình hỗ trợ giải quyết khiếu nại",
+        "Operational-Regulations": "Quy chế hoạt động",
+        "Headquarters": "Trụ sở tại Hà Nội",
+        "Office": "Văn phòng tại TP Hồ Chí Minh",
+        "support": "Hỗ trợ khách hàng",
+        "download": "Tải ứng dụng BookingCare cho điện thoại hoặc máy tính bảng:",
+        "other": "Khác"
     }
 }

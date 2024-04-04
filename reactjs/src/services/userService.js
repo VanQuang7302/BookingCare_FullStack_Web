@@ -97,11 +97,19 @@ const getListPatientForDoctorService = async (data) => {
 const sendRemedyService = async (data) => {
     return axios.post(`/api/send-remedy`, data)
 }
+
+const search = (text) => {
+    return axios.get(`/api/search?text=${text}`)
+}
+
+const editSpecialty = (id, data) => {
+    return axios.put(`/api/edit-specialty?id=${id}`, data)
+}
 export {
     handleLoginApi, getAllUsers, createNewUserService, deleteUserService,
     editUserService, getAllCodeService, getTopDoctorHomeService, getAllDoctors,
     saveDetailDoctorService, getDetailInforDoctor, saveBulkScheduleDoctor, getScheduleDoctorByDate,
     getExtraInforDoctorById, getProfileDoctorById, postPatientBookingAppointment, postVerifyBookAppointmentService,
     createSpecialtyService, getAllSpecialtyService, getSpecialtyByIdService, createClinicService, getAllClinicService,
-    getClinicByIdService, getListPatientForDoctorService, sendRemedyService
+    getClinicByIdService, getListPatientForDoctorService, sendRemedyService, search, editSpecialty
 };
